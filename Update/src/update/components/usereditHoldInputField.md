@@ -95,7 +95,8 @@ const handleSubmit = (event) => {
         user.id === isEditting ? { ...user, ...formData } : user
       )
     );
-    setEditting(null);  // Reset isEditting after update
+    setEditting(null);  
+    // Reset isEditting after update
   } else {  // If we're adding a new user
     setUserData((prevData) => [
       ...prevData,
